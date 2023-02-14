@@ -1,3 +1,14 @@
+/*
+
+* challenge6-2.c
+
+*
+
+* Created on: Feb 14, 2023
+
+* Author: zameel
+
+*/
 #include <stdio.h>
 #include "addition.h"
 #include "subtraction.h"
