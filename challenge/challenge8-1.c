@@ -11,7 +11,7 @@
 */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <pthread.h>
 
 // Declare a global variable and a mutex to protect it
 int global_var;
