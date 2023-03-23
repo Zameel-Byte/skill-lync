@@ -1,0 +1,27 @@
+Challenge 8-2
+
+The Interrupt Pattern and Polling Pattern are both implemented in firmware, which is typically written in a low-level programming language such as C or assembly. However, the specific implementation of these patterns will vary depending on the hardware platform and the specific requirements of the system being designed.
+
+Interrupt Pattern:
+
+Relies on the hardware interrupt mechanism provided by the processor or microcontroller to handle events.
+When an event or I/O operation requires attention, it triggers a hardware interrupt that suspends the current program execution and transfers control to an interrupt service routine (ISR).
+The ISR performs the necessary operations, such as reading or writing to I/O ports, and then returns control to the main program.
+Advantages:
+Faster response times.
+Reduces the processing load on the CPU.
+Disadvantages:
+More complex to implement, as the ISR must be carefully designed to handle shared resources and avoid conflicts with the main program.
+Too many interrupts can lead to interrupt storms and affect system performance.
+Polling Pattern:
+
+Involves the main program continuously checking the status of the event or I/O port to see if any action is required.
+This is typically done using conditional statements or loops that repeatedly read or write to the port and perform the necessary operations if the status changes.
+Advantages:
+Simpler to implement.
+Allows for greater control over the timing of event handling.
+Disadvantages:
+Less responsive.
+Consumes more CPU resources.
+Can lead to race conditions or synchronization issues.
+Overall, the choice between Interrupt Pattern and Polling Pattern depends on the specific requirements and constraints of the embedded system being designed, such as the frequency of events, the complexity of the processing required, and the available hardware resources. In general, the Interrupt Pattern is preferred for high-frequency events or time-critical operations, while the Polling Pattern may be more suitable for lower-frequency events or simpler processing requirements.
