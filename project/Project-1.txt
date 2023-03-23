@@ -1,0 +1,38 @@
+Project-1
+
+The project is an implementation of operations on linked lists, specifically finding the union and intersection of two linked lists. The program uses a structure to define a linked list node and initializes the linked lists. It has three functions for the insertion of nodes at the beginning of a linked list, searching for a specific node in the list, and printing the linked list. The program takes input from the user for the number of nodes in the two linked lists and their values. It then creates two linked lists and prints them. Next, the program calls the union and intersection functions to find the union and intersection of the two linked lists, respectively. Finally, it prints the resulting linked lists. The program serves as an example of how to perform various operations on linked lists and can be used as a starting point for more complex linked list applications.
+
+ 
+
+Expected algorithm:
+
+1. Declare and define a structure of a linked list node, which contains integer data and a pointer to the next node in the linked list.
+2. Declare pointers to four linked lists: l_lOne, l_lTwo, unionl_l, and intersectionl_l, and initialize l_lOne and l_lTwo to NULL.
+3. Define the "initialize()" function to set both l_lOne and l_lTwo to NULL.
+4. Define the "insert()" function to insert a new node at the beginning of a linked list, taking a pointer to the head of the list and an integer value as input.
+5. Define the "search()" function to search for a specific value in a linked list, taking a pointer to the head of the list and an integer value as input, and returning 1 if the value is found and 0 otherwise.
+6. Define the "findunion()" function to return the union of two linked lists, taking pointers to the heads of the two lists as input. The function first initializes the unionl_l linked list to NULL, then adds all nodes of l_lOne to unionl_l, and finally inserts those nodes of l_lTwo which are not present in l_lOne.
+7. Define the "intersection()" function to return the linked list that contains common nodes of two linked lists, taking pointers to the heads of the two lists as input. The function first initializes the intersectionl_l linked list to NULL, then searches every element of l_lOne in l_lTwo, and if found, adds it to the intersectionl_l linked list.
+8.Define the "printLinkedList()" function to print a linked list from head node till tail node, taking a pointer to the head node as input.
+9. Define the "main()" function, which does the following: a. Initializes the linked lists and prompts the user to enter the number of nodes and values of the first and second linked lists. b. Calls the "insert()" function to insert the user-input values into l_lOne and l_lTwo. c. Prints the contents of l_lOne and l_lTwo using the "printLinkedList()" function. d. Calls the "findunion()" function to calculate and store the union of l_lOne and l_lTwo in the unionl_l linked list. e. Calls the "intersection()" function to calculate and store the intersection of l_lOne and l_lTwo in the intersectionl_l linked list. f. Prints the contents of unionl_l and intersectionl_l using the "printLinkedList()" function.
+
+Program Description:
+This program implements a simple linked list data structure in C language. It consists of the following functionalities:
+
+1. struct node: A structure of a linked list node that contains an integer data and a pointer to the next node in the list.
+
+2. initialize(): A function that initializes the pointers of two linked lists l_lOne and l_lTwo to NULL.
+
+3. insert(struct node **head, int num): A function that inserts a new node at the beginning of a given linked list. It takes a pointer to the head node of the list and an integer value to be inserted as arguments.
+
+4. search(struct node *head, int num): A function that searches for a given integer value in a linked list. It takes a pointer to the head node of the list and an integer value to be searched as arguments. If the value is found, it returns 1, else it returns 0.
+
+5. findunion(struct node *l_lOne, struct node *l_lTwo): A function that returns a linked list which contains the union of two given linked lists. It takes pointers to the head nodes of the two linked lists as arguments. It first adds all nodes of the first linked list to the union list, and then inserts those nodes of the second linked list which are not present in the first linked list.
+
+6. intersection(struct node *l_lOne, struct node *l_lTwo): A function that returns a linked list which contains the common nodes of two given linked lists. It takes pointers to the head nodes of the two linked lists as arguments. It searches every element of the first linked list in the second linked list, if found then adds it to the intersection list.
+
+7. printLinkedList(struct node *nodePtr): A function that prints a given linked list from head node till tail node.
+
+8. main(): The main function that creates two linked lists l_lOne and l_lTwo using the insert() function. It then calls the findunion() function to get the union of two linked lists and intersection() function to get the intersection of two linked lists. Finally, it calls printLinkedList() function to print the union and intersection lists.
+
+In summary, this program provides basic functionalities of creating, inserting, searching, and printing linked lists, as well as finding the union and intersection of two linked lists.
